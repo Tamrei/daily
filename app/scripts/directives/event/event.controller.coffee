@@ -18,10 +18,6 @@ class @EventController
     }
 
     $($element).click (e) ->
-      x = e.clientX
-      y = e.clientY
-      elementMouseIsOver = document.elementFromPoint(x, y)
-      alert(elementMouseIsOver.className + " data: " + $scope.index + " : " + $scope.event + " : " + $scope.date)
       updateEventModal = $uibModal.open
         controller: "updateEventModalController"
         templateUrl: 'updateEventModal.template.html'

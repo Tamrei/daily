@@ -6,7 +6,6 @@ class @DayController
       x = e.clientX
       y = e.clientY
       elementMouseIsOver = document.elementFromPoint(x, y)
-      alert(elementMouseIsOver.className)
       if elementMouseIsOver.className.includes "day-panel"
         addEventModal = $uibModal.open
           controller: "saveEventModalController",
