@@ -1,0 +1,66 @@
+<!--MODAL WINDOW-->
+<script type="text/ng-template" id="saveEventModal.template.html">
+    <div class="modal-header">
+        <button type="button" class="close" ng-click="close()"
+                aria-hidden="true"> x
+        </button>
+        <h4></h4>
+    </div>
+    <form name="eventForm" ng-submit="save()" novalidate>
+
+        <div class="modal-body">
+
+            <div class="form-group">
+
+                <div class="row">
+                    <div class="col-md-4 col-xs-4" style="padding-left: 0">
+                        <div class="col-md-6 col-xs-6 time-input">
+                            <label>From</label>
+                            <input type="number" name="fromHour" min="0" max="23" class="form-control timeInput"
+                                   ng-model="event.from.hour" placeholder="hour" required/>
+                        </div>
+                        <div class="col-md-6 col-xs-6"
+                             style="padding-left: 0; padding-right: 0; padding-top: 25px;">
+                            <input type="number" name="fromMinutes" ng-value="0" min="0" max="59" class="form-control timeInput"
+                                   ng-model="event.from.minutes" placeholder="min" required/>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-xs-4">
+                    </div>
+
+                    <div class="col-md-4 col-xs-4" style="padding-right: 0">
+                        <div class="col-md-6 col-xs-6 time-input">
+                            <label>To</label>
+                            <input type="number" name="toHour" min="0" max="23" class="form-control timeInput"
+                                   ng-model="event.to.hour" placeholder="hour" validateT="5" required/>
+                        </div>
+                        <div class="col-md-6 col-xs-6"
+                             style="padding-left: 0; padding-right: 0; padding-top: 25px;">
+                            <input type="number" name="toMinutes" ng-value="0" min="0" max="59" class="form-control timeInput"
+                                   ng-model="event.to.minutes" placeholder="min" required/>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="control-label" style="padding-top: 10px"> Event Name: </label>
+                    <input type="text" name="name" class="form-control" placeholder="Enter event name"
+                           ng-model="event.name" required>
+                </div>
+
+                <label for="comment" style="padding-top: 10px">Comment:</label>
+                <textarea class="form-control" placeholder="Comment" rows="5" id="comment"
+                          ng-model="event.comment"></textarea>
+            </div>
+
+        </div>
+
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-default">Add</button>
+            <button class="btn btn-danger" ng-click="close()">Close</button>
+        </div>
+
+    </form>
+
+</script>

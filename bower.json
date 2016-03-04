@@ -1,0 +1,23 @@
+{
+  "name": "daily",
+  "description": "",
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "^1.4.7",
+    "angular-animate": "^1.4.7",
+    "angular-route": "^1.4.7",
+    "angular-ui-router": "^0.2.18 ",
+    "angular-ui-router-anim-in-out": "^1.0.2",
+    "angular-ui-bootstrap-bower": "^0.14.3",
+    "jquery": "^2.2.1",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "fontawesome#^4.5.0"
+  }
+}

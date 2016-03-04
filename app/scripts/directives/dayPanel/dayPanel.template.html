@@ -1,0 +1,10 @@
+<div ng-click="open(data)" class="col-md-1 day-panel">
+    {{date | date: "dd MMMM / EEE"}}
+
+    <div ng-repeat="event in events track by $index">
+        <event event="event" index="{{$index}}" date="date"></event>
+    </div>
+
+    <ng-transclude></ng-transclude>
+</div>
+

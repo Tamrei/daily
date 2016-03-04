@@ -1,0 +1,2 @@
+class @WeekPanelController
+  constructor: ($scope) ->

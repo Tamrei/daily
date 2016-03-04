@@ -1,0 +1,101 @@
+.mainPanel {
+    border: 1px solid darkgray;
+}
+
+.row {
+    margin: 0;
+}
+
+.event-text {
+    font-size: 14px;
+    text-align: center;
+    color: whitesmoke
+}
+
+.year-info {
+    bottom: 18px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+        width: 100%;
+        *width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+        width: 14.285714285714285714285714285714%;
+        *width: 14.285714285714285714285714285714%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+        width: 14.285714285714285714285714285714%;
+        *width: 14.285714285714285714285714285714%;
+    }
+}
+
+.day-panel {
+    position: relative;
+    height: 730px;
+    max-height: 737px;
+    min-height: 737px;
+    border: 1px solid #ddd;
+    background-color: #EAEAEA;
+}
+
+.event-in-day-bar {
+    position: absolute;
+    height: 50%;
+    padding-bottom: 35%;
+    left: 1%;
+    width: 98%;
+    background-color: #266C8E;
+    border-radius: 0;
+}
+
+.nextWeek {
+    position: relative;
+    min-width: 800px;
+
+    -webkit-transition: all 800ms ease-in-out;
+    -moz-transition: all 800ms ease-in-out;
+    -o-transition: all 800ms ease-in-out;
+    transition: all 800ms ease-in-out;
+}
+
+.nextWeek.ng-enter {
+    opacity: .99;
+    left: 30%;
+}
+
+.nextWeek.ng-enter-active {
+    opacity: .99;
+    left: 0;
+}
+
+.nextWeek.ng-leave {
+    opacity: .99;
+    left: 30%;
+    display: none;
+}
+
+.nextWeek.ng-leave-active {
+    opacity: .99;
+    left: -0%;
+    display: none;
+}
+
+.time-input {
+    padding-left: 0;
+    padding-right: 0;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-ui-router-anim-in-out/anim-in-out.js"></script>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="scripts/controllers/main.controller.js"></script>
+    <script src="scripts/service/week.service.js"></script>
+    <script src="scripts/service/storage.service.js"></script>
+
+    <script src="scripts/directives/mainPanel/mainPanel.directive.js"></script>
+    <script src="scripts/directives/mainPanel/mainPanel.controller.js"></script>
+
+    <script src="scripts/directives/dayPanel/dayPanel.directive.js"></script>
+    <script src="scripts/directives/dayPanel/dayPanel.controller.js"></script>
+
+    <script src="scripts/directives/weekPanel/weekPanel.directive.js"></script>
+    <script src="scripts/directives/weekPanel/weekPanel.controller.js"></script>
+
+    <script src="scripts/directives/event/event.directive.js"></script>
+    <script src="scripts/directives/event/event.controller.js"></script>
+
+    <script src="scripts/modals/saveEvent/saveEventModal.controller.js"></script>
+    <script src="scripts/modals/updateModal/updateEventModal.controller.js"></script>
+
+    <script src="scripts/factories/week.factory.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+
+    <script src="scripts/includes.js"></script>
+
+    <script src="scripts/main.js"></script>
+</head>
+
+<body ng-controller="mainController">
+
+<div ng-include="'scripts/modals/saveEvent/saveEventModal.template.html'"></div>
+<div ng-include="'scripts/modals/updateModal/updateEventModal.template.html'"></div>
+
+<div class="container ui-view-container view-container">
+
+    <mainpanel>
+        <weekpanel></weekpanel>
+    </mainpanel>
+
+</div>
+</body>
+</html>
