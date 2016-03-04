@@ -19,3 +19,9 @@ $ gulp coffee
 ```sh
 $ gulp connect
 ```
+
+[Open http://localhost:8889/](http://localhost:8889/)
+
+???
+
+Profit
